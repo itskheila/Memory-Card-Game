@@ -83,7 +83,7 @@ function GameBoard() {
     }
   }, [flippedCards, cards, matchesFound]);
 
-  // Check if game is won
+  // To check if game is won
   useEffect(() => {
     if (matchesFound === 8 && cards.length > 0) {
       setTimeout(() => {
