@@ -8,23 +8,24 @@ import './styles/App.css';
 
 
 
-function App(){
+function App() {
     return (
-        <div className="App">
-            <h1>Memory Card Game</h1>
-            <GameBoard />
-            <Navbar/>
+        
+        <Router>
+            <div className="App">
+                <h1>Memory Card Game</h1>
+                <Navbar /> 
 
-            <Router>
-                <Routes>
-                    <Route path="/" element={<GameBoard />} />
-                    <Route path="/about" element={<About />} />
-                    <Route path="/results" element={<GameResults />} />
-                </Routes>
-            </Router>
-            
-           
-        </div>
+                <div className="content"> 
+                    <Routes>
+                        
+                        <Route path="/" element={<GameBoard />} /> 
+                        <Route path="/about" element={<About />} />
+                        <Route path="/results" element={<GameResults />} />
+                    </Routes>
+                </div>
+            </div>
+        </Router>
     );
 }
 

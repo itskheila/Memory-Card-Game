@@ -1,10 +1,13 @@
+import '../styles/Navbar.css'; 
+import { Link } from 'react-router-dom';
+
 function Navbar(){
     return (
-        <div>
+        <div className="navbar">
             <ul>
-                <li><a href="/">Game Page</a></li>
-                <li><a href="/about">About</a></li>
-                <li><a href="/results">Game Results</a></li>
+                <li><Link to="/">Game Page</Link></li> 
+                <li><Link to="/about">About</Link></li>
+                <li><Link to="/results">Game Results</Link></li>
             </ul>
         </div>
     )
