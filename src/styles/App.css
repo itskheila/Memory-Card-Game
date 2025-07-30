@@ -14,7 +14,3 @@ button{
   font-weight: bold;
 }
 
-button:hover{
-  background-color: rgb(255, 99, 71);
-  color: #fff;
-}

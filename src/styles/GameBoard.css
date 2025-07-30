@@ -1,0 +1,40 @@
+
+.game-board-container {
+  text-align: center;
+  padding: 20px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.game-board-container h2 {
+  color: #020202;
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
+
+/* 4x4 grid for cards */
+.game-board-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+  margin: 20px 0;
+  padding: 20px;
+  background-color: #f0f8ff;
+  border-radius: 10px;
+}
+
+/* Restart button */
+.restart-button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.restart-button:hover {
+  background-color: #45a049;
+}
