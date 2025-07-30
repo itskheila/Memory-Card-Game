@@ -1,8 +1,8 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./styles/App.css";
 import GameBoard from "./components/GameBoard";
-import About from "../src/components/About";
-import GameResults from "../src/components/GameResults";
+import About from "./components/About";
+import GameResults from "./components/GameResults";
 import Navbar from "./components/Navbar";
 import './styles/App.css';
 

@@ -26,7 +26,7 @@ const fruitImgs={
 
 
 function GameCard({ card, handleCardClick }) {
-    //only allow clicks if the card is not matched and not flipped
+    //only allows clicks if the card is not matched and not flipped
   const handleClick = () => {
     
     if (!card.isMatched && !card.isFlipped) {

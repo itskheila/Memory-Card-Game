@@ -38,3 +38,7 @@
 .restart-button:hover {
   background-color: #45a049;
 }
+
+.game-board-container h2 {
+  margin-top: -45px;
+}
