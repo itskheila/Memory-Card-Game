@@ -91,7 +91,7 @@ function GameBoard() {
 
   // Helps check if the game has been won
   useEffect(() => {
-    if (matchesFound === 8 && cards.length > 0) {
+    if (matchesFound === 8) {
       setTimeout(() => {
         alert(`Congratulations! You won in ${moves} moves!`);
       }, 500);
