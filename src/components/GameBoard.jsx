@@ -17,16 +17,14 @@ function GameBoard() {
   const [matchesFound, setMatchesFound] = useState(0);
   const [moves, setMoves] = useState(0); // Track moves
 
-  // game starts when the component loads
+  // game starts when the page loads
   useEffect(() => {
     startGame();
   }, []);
 
   const startGame = () => {
-    // enables shuffling of cards and creates an array of shuffled card values
+    // this enables shuffling of cards and creates an array of shuffled card values
     const shuffled = [...cardValues].sort(() => Math.random() - 0.5);
-    
-    // helps create card objects with id, value, isFlipped, and isMatched properties
     
     const newCards = shuffled.map((value, index) => ({
       id: index,
